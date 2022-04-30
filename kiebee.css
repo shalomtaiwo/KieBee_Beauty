@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    padding: 0 120px;
+}
+.kSpace{
+    width: 48px;
+}
+.offCanvas{
+    cursor: pointer;
+}
+.Category{
+    padding: 30px 0;
+}
+.categoryItemTwo{
+    padding: 0 0 20px;
+}
+.CategorySingleHeader{
+    margin-top: -155px;
+}
+.cItemTwoHeader{
+    margin-bottom: -99px;
+    padding-left: 20px;
+    z-index: 9999;
+}
