@@ -2,7 +2,11 @@
     box-sizing: border-box;
     margin: 0;
 }
-body{
+.header{
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgb(226, 223, 223);
+}
+header,main{
     padding: 0 120px;
 }
 .kSpace{
@@ -17,11 +21,118 @@ body{
 .categoryItemTwo{
     padding: 0 0 20px;
 }
-.CategorySingleHeader{
-    margin-top: -155px;
+.categorySingle{
+    width: 50%;
+}
+.categoryDouble{
+    width: 50%;
 }
 .cItemTwoHeader{
     margin-bottom: -99px;
     padding-left: 20px;
     z-index: 9999;
 }
+.navActive:hover{
+    padding: 1px;
+    background-color: rgb(219, 216, 163);
+    border-radius: 60px;
+}
+.nav-link{
+    color: black !important;
+    cursor: pointer;
+}
+/* Contact Us Styling */
+.contactUs{
+    display: none;
+    padding-top: 50px;
+}
+.contactAddress{
+    width: 40%;
+}
+.contactForm{
+    width: 60%;
+}
+
+/* Footer Subscription */
+.subsColumn{
+    position: fixed;
+    width: 500px;
+    height: 200px;
+    border: 1px solid rgb(219, 216, 163);
+    background-color: white;
+    bottom: 10px;
+    margin-left: 50px;
+    padding: 30px;
+    z-index: 10;
+    display: none;
+}
+.subscription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subsClose{
+    cursor: pointer;
+}
+
+#subsForm{
+    display: flex;
+    margin-top: 15px;
+}
+#subsEmail{
+    padding: 5px;
+    border-radius: 6px;
+    width: 300px;
+    margin-right: 5px;
+    border: 1px groove rgb(219, 216, 163);
+}
+#subsEmail:focus{
+    outline: none;
+}
+#subsSubmit{
+    background-color: #f58d0d;
+    color: white;
+}
+.contactSubmit{
+    background-color: #f58d0d !important;
+    color: white !important;
+}
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */  
+  @media only screen and (max-width: 600px) {
+}
+    @media only screen and (max-width: 768px) {
+    .CategorySingleHeader{
+        display: none;
+    }  
+    .Category{
+        flex-direction: column;
+    }
+    .categorySingle{
+        width: 100%;
+        margin-bottom: -120px;
+    }
+    .categoryDouble{
+        width: 100%;
+    }
+    header,main{
+        padding: 0 60px;
+    }
+} 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (max-width: 992px) {
+    .CategorySingleHeader{
+        display: none;
+    }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .CategorySingleHeader{
+        margin-top: -235px;
+    }  }
