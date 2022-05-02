@@ -171,6 +171,9 @@ header,main{
     #subsSubmit{
         width: fit-content !important;
     }
+    .navActive:hover{
+        width: fit-content;
+    }
 } 
   
   /* Large devices (laptops/desktops, 992px and up) */
