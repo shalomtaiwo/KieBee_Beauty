@@ -7,11 +7,14 @@ class kieBee{
 
     navPage(){
         this.contactUs = document.querySelector('.contact');
-        this.mcontactUs = document.querySelector('.mcontact');
+        this.mcontactUs = document.querySelector('.mContact');
         this.contactPage = document.querySelector('#contactPage');
         this.aboutLink = document.querySelector('.aboutUs');
+        this.mAboutLink = document.querySelector('.mAboutUs');
         this.shopLink = document.querySelector('.shopWithUs');
+        this.mShopLink = document.querySelector('.mShop');
         this.homeLink = document.querySelector('.homeLink');
+        this.mHomeLink = document.querySelector('.mHomeLink');
         this.homePage = document.querySelector('.homePage');
         this.mobileMenu = document.querySelector('.mobileDropDown');
         this.mobileBurger = document.querySelector('.kSpace');
@@ -35,10 +38,22 @@ class kieBee{
             this.contactPage.style.display = "none";
             this.homePage.style.display = "block";
         });
+        this.mHomeLink.addEventListener('click',(event)=>{
+            this.contactPage.style.display = "none";
+            this.homePage.style.display = "block";
+        });
         this.aboutLink.addEventListener('click',(event)=>{
             alert('Coming Soon! Feel free to send us a message and subscribe to stay in tuned!');
         });
         this.shopLink.addEventListener('click',(event)=>{
+            alert('Coming Soon! Feel free to send us a message and subscribe to stay in tuned!');
+        });
+        
+        // Mobile alert
+        this.mAboutLink.addEventListener('click',(event)=>{
+            alert('Coming Soon! Feel free to send us a message and subscribe to stay in tuned!');
+        });
+        this.mShopLink.addEventListener('click',(event)=>{
             alert('Coming Soon! Feel free to send us a message and subscribe to stay in tuned!');
         });
     }
