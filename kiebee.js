@@ -7,6 +7,7 @@ class kieBee{
 
     navPage(){
         this.contactUs = document.querySelector('.contact');
+        this.mcontactUs = document.querySelector('.mcontact');
         this.contactPage = document.querySelector('#contactPage');
         this.aboutLink = document.querySelector('.aboutUs');
         this.shopLink = document.querySelector('.shopWithUs');
@@ -23,6 +24,10 @@ class kieBee{
             }
         });
         this.contactUs.addEventListener('click',(event)=>{
+            this.contactPage.style.display = "flex";
+            this.homePage.style.display = "none";
+        });
+        this.mcontactUs.addEventListener('click',(event)=>{
             this.contactPage.style.display = "flex";
             this.homePage.style.display = "none";
         });
