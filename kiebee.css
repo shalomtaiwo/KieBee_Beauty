@@ -125,7 +125,7 @@ header,main{
 
     .subsColumn{
         position: fixed;
-        width: 300px;
+        width: 350px;
         height: 200px;
         border: 1px solid rgb(219, 216, 163);
         background-color: white;
@@ -142,8 +142,9 @@ header,main{
     #subsEmail{
         padding: 5px;
         border-radius: 6px;
-        width: 220px;
+        width: 260px;
         margin-right: 5px;
+        margin-bottom: 10px;
         border: 1px groove rgb(219, 216, 163);
     }
 } 
