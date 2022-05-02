@@ -135,11 +135,14 @@ header,main{
         z-index: 10;
         display: none;
     }
+    #subsForm{
+        flex-direction: column;
+    }
 
     #subsEmail{
         padding: 5px;
         border-radius: 6px;
-        width: 260px;
+        width: 220px;
         margin-right: 5px;
         border: 1px groove rgb(219, 216, 163);
     }
