@@ -160,7 +160,7 @@ header,main{
         border: 1px groove rgb(219, 216, 163);
     }
     .contactUs{
-    flex-direction: column-reverse;
+    flex-direction: column;
     }
     .contactAddress{
         width: 100%;
