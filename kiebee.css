@@ -30,7 +30,7 @@ header,main{
 .cItemTwoHeader{
     margin-bottom: -99px;
     padding-left: 20px;
-    z-index: 9999;
+    z-index: 9;
 }
 .navActive:hover{
     padding: 1px;
