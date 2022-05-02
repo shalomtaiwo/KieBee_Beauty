@@ -6,12 +6,22 @@ class kieBee{
     }
 
     navPage(){
-        this.contactUs = document.querySelector('#contactUs');
+        this.contactUs = document.querySelector('.contact');
         this.contactPage = document.querySelector('#contactPage');
-        this.aboutLink = document.querySelector('#aboutUs');
-        this.shopLink = document.querySelector('#shopWithUs');
-        this.homeLink = document.querySelector('#homePage');
+        this.aboutLink = document.querySelector('.aboutUs');
+        this.shopLink = document.querySelector('.shopWithUs');
+        this.homeLink = document.querySelector('.homeLink');
         this.homePage = document.querySelector('.homePage');
+        this.mobileMenu = document.querySelector('.mobileDropDown');
+        this.mobileBurger = document.querySelector('.kSpace');
+        this.mobileBurger.addEventListener('click',(event)=>{
+            if(this.mobileMenu.style.display == 'block'){
+                this.mobileMenu.style.display = "none";
+            }
+            else{
+                this.mobileMenu.style.display = "block";
+            }
+        });
         this.contactUs.addEventListener('click',(event)=>{
             this.contactPage.style.display = "flex";
             this.homePage.style.display = "none";
